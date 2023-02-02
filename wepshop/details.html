@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../bootstrap/css/boostrap-3.3.6.min.css">
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap-3.3.6.min.js"></script>
+    <link rel="stylesheet" href="../wepshop/a.css">
+    <script src="../wepshop/a.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#imgitem').attr("src",localStorage.getItem("img"));
+            $('#nameitem').html(localStorage.getItem("name"));
+            $('#priceitem').html(localStorage.getItem("price"));
+            $('#detailitems').html(localStorage.getItem("detailitem"));
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <a href="../wepshop/trangchu.html">
+            <p >Văn phòng phẩm</p>
+        </a>
+        <a href="../wepshop/trangchu.html"><img src="../img/logoshop.png" alt="picture"></a>
+        <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm sản phẩm..." >
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+            <p class="spphone">Hỗ trợ khách hàng <br>
+                <a href="">1900 800 811</a>
+            </p>
+        <div class="user">
+            <i class="fas fa-user"></i>
+        </div>
+            <p class="login"><a href="">Tài khoản</a> <br>
+                <a href="../formdk-dn/html/DN.html">Đăng nhập</a>
+            </p>
+        <div class="shopping-cart">
+            <a href="" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Giỏ hàng</h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số lượng</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+                </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <a href="../wepshop/trangchu.html" class="nav-link" style="font-size: 20px;">Về trang chủ</a>
+    <div >
+        <div class="row bg-light p-5">
+            <div class="col-2"></div>
+            <div class="col-8  ">
+                <div class=" p-1 border bg-white">
+                    <div class="row p-4" id="boxitem">
+                        <div class="col-5">
+                            <img src="" alt="" id="imgitem" width="350" class="imgitem">
+                        </div>
+                        <div class="col-7 row">
+                            <div class="col-12">
+                                <label for="" class="title" style="font-size: 30px;" id="nameitem"></label>
+                            </div>
+                            <div class="col-12">
+                                <label for="" style="font-size: 30px;">Giá: </label>
+                                <label for="" class="price text-danger" style="font-size: 30px;" id="priceitem"></label>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning" id="buy">Mua</button>
+                    </div> 
+                </div>
+                <div class=" p-1 border bg-white">
+                    <div class="p-4">
+                        <p id="detailitems" style="font-size: 18px;" ></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <p><p class="font-weight-bold ">NTTvanphongpham.com - Website thương mại điện tử thuộc NTT</p>
+
+                        <br> Công ty Cổ Phần Tập Đoàn NTT
+                        
+                        <br> GPĐKKD số 0301464830 do Sở KHĐT TP. Hồ Chí Minh cấp ngày 04/03/2005.
+                        
+                        <br> Địa chỉ: Lô 6-8-10-12, Đường số X, Q.Gò Vấp, TP. Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="col-4">
+                    <p><p class="font-weight-bold">HỖ TRỢ KHÁCH HÀNG</p>
+                        <p class="text-danger">
+                            Hotline: 1900 800 811 <br>
+                            
+                            NTTvanphongpham@gmail.com.vn
+                        </p>
+                        
+                        <a href="../support/html/chinhsachuudai.html"><br>- Chính sách ưu đãi</a>
+                        <a href="../support/html/huongdanmuahang.html"><br>- Hướng dẫn mua hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-6">2021 © NTTvanphongpham.com - Bản quyền thuộc Tập đoàn NTT</div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

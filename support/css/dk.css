@@ -1,0 +1,176 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+body{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(236, 28, 36);
+    position: relative;
+}
+#header img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#header a p{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: black;
+}
+#header a{
+    text-decoration: none;
+    color: black;
+}
+#header .search-box{
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+#header .search-box input[type=text]{
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+}
+#header .search-box a{
+    font-size: 35px;
+}
+#header .search-box a i{
+    position: absolute;
+    top: 15px;
+    left: 605px;
+}
+#header .phone{
+    position: absolute;
+    top: 58px;
+    right: 520px;
+}
+#header .phone i{
+    font-size: 25px;
+    background-color: white;
+    border:10px solid white;
+    border-radius: 23px;
+}
+#header .spphone{
+    position: absolute;
+    top: 58px;
+    right: 380px;
+    font-weight: bold;
+    color: white;
+}
+#header .spphone a{
+    color: white;
+}
+#header .user i{
+    font-size: 25px;
+    background-color: white;
+    border:10px solid white;
+    border-radius: 23px;
+}
+#header .user{
+    position: absolute;
+    top: 58px;
+    right: 310px;
+}
+#header .login{
+    position: absolute;
+    top: 58px;
+    right: 220px;
+    font-weight: bold;
+}
+#header .login a{
+    color: white;
+}
+#header .spphone a:hover, #header .login a:hover{
+    color: yellow;
+}
+#header .shopping-cart{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+#header .shopping-cart i{
+    font-size: 65px;
+    color: white;
+}
+/*menu*/
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(173, 119, 119);
+    position: relative;
+    z-index: 2;
+}
+#menu ul{
+    list-style-type: none;
+    position: absolute;
+    margin-left: 50px;
+    font-size: 30px;
+    
+}
+#menu ul li{
+    display: none;
+}
+#menu ul:hover .menu-1{
+    display: block;
+    background-color: white;
+    border: 1px solid rgb(173, 119, 119);
+    margin-top: 7px;
+    /* margin-left: 10px; */
+    padding: 0px 10px;
+    /* box-shadow: 0px 5px 10px; */
+}
+#menu ul:hover li{
+    display: block;
+    /* position: absolute; */
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#menu ul li:hover a{
+    color: red;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+#menu .menu-1 img{
+    width: 20px;
+    height: 20px;
+}
+#menu .clock{
+    position: absolute;
+    left: 400px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+#menu .shipping-fast{
+    position: absolute;
+    left: 780px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+#menu .discount{
+    position: absolute;
+    right: 360px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+#menu .gift{
+    position: absolute;
+    right: 180px;
+    font-size: 25px;
+    margin-top: 5px;
+}

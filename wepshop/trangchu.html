@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../bootstrap/css/boostrap-3.3.6.min.css">
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap-3.3.6.min.js"></script>
+    <link rel="stylesheet" href="../wepshop/a.css">
+    <script src="../wepshop/a.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="../wepshop/trangchu.html">
+            <p >Văn phòng phẩm</p>
+        </a>
+        <a href="../wepshop/trangchu.html"><img src="../img/logoshop.png" alt="picture"></a>
+        <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm sản phẩm..." >
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+            <p class="spphone">Hỗ trợ khách hàng <br>
+                <a href="">1900 800 811</a>
+            </p>
+        <div class="user">
+            <i class="fas fa-user"></i>
+        </div>
+            <p class="login"><a href="">Tài khoản</a> <br>
+                <a href="../formdk-dn/html/DN.html">Đăng nhập</a>
+            </p>
+        <div class="shopping-cart">
+            <a href="" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Giỏ hàng</h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số lượng</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+                </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <ul><i class="fas fa-bars"></i> Danh sách sản phẩm
+            <div class="menu-1">
+                <li><a href="#discount"><img src="../img/sale.PNG" alt="sale"> Giá tốt hôm nay</a></li>
+                <li><a href="#pen"><img src="../img/pen.PNG" alt="pen"> Bút viết</a></li>
+                <li><a href="#stationerys"><img src="../img/vanphongpham.PNG" alt="vanphongpham"> Văn phòng phẩm</a></li>
+                <li><a href="#learning"><img src="../img/dungcuhoctap.PNG" alt="dungcuhoctap"> Dụng cụ học tập</a></li>
+                <li><a href="#paint"><img src="../img/tomau.PNG" alt="tomau"> Vẽ, học vẽ, tô màu</a></li>
+                <li><a href="#toy"><img src="../img/toy.PNG" alt="toy"> Đồ chơi</a></li>
+            </div>
+        </ul>
+        <div class="clock"><a href=""><i class="fas fa-clock"></i> <span>Giao hàng nhanh trong ngày</span></a></div>
+        <div class="shipping-fast"><a href=""><i class="fas fa-shipping-fast"></i> <span>Miễn phí giao hàng</span></a></div>
+        <div class="discount"><a href=""><i class="fas fa-tags"></i> <span>Giảm giá</span></a></div>
+        <div class="gift"><a href=""><i class="fas fa-gift"></i> <span>Quà tặng</span></a></div>
+    </div>
+    <div id="banner" >
+        <div class="QC"><img src="../img-web/banner-vpp.jpg" alt=""></div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             
+              <ol style="list-style-type: decimal;" class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="item active"> <img src="../img-web/banner-1.jpeg">
+                </div>
+                <div class="item"> <img src="../img-web/BANNERBUTVIETjpg.png">
+                </div>
+                <div class="item"> <img src="../img-web/customLogo.png">
+                </div>
+                <div class="item"> <img src="../img-web/kiddystore_vn_1617330762.jpg">
+                </div>
+                <div class="item"> <img src="../img-web/may-tinh-cam-tay-va-phu-kien-giam-den-20-tiki-banner.jpg">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fas fa-chevron-left" style="font-size: 45px; margin:120px; margin-left: 20px;"></i></a> 
+              <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fas fa-chevron-right" style="font-size: 45px; margin:120px; margin-right: 20px;"></i></a> </div> 
+          </div>
+    </div>
+          <div id="productlist">
+                <div class="sell">
+                    <h1 style="margin-left: 14.5px;" id="discount">Các sản phẩm đang giảm giá</h1>
+                    <div class="sell-p">
+                        <a href="../wepshop/details.html" onclick="detail(1)">
+                            <img src="../SanPham/sp4/1.PNG" alt="sotay" class="imgitem">
+                            <p><span class="title">Sổ Tay Slim Notebook - Ruột Sổ Chấm Bi</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold; text-decoration: line-through;">9.500 đ</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">7.500 đ</span>
+                        </p>
+                        </a>
+                        <button class="btn btn-warning">Mua</button>
+                    </div>
+                    <div class="sell-p">
+                        <a href="../wepshop/details.html" onclick="detail(2)">
+                            <img src="../SanPham/sp5/1.PNG" alt="sotay" class="imgitem">
+                            <p><span class="title">Băng Keo Hai Mặt Siêu Dính Trong Suốt Chống Nước</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold; text-decoration: line-through;">25.000 đ</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">17.000 đ</span>
+                        </p>
+                        </a>
+                        <button class="btn btn-warning">Mua</button>
+                    </div>
+                    <div class="sell-p">
+                        <a href="">
+                            <img src="../SanPham/sp6/1.PNG" alt="sotay" class="imgitem">
+                            <p><span class="title">Ống Cắm Bút, Đựng Cọ Trang Điểm, Đựng Văn Phòng Phẩm Mèo Lucky</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold; text-decoration: line-through;">15.500 đ</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">9.500 đ</span>
+                        </p>
+                        </a>
+                        <button class="btn btn-warning">Mua</button>
+                    </div>
+                    <div class="sell-p">
+                        <a href="">
+                            <img src="../SanPham/sp8/1.PNG" alt="sotay" class="imgitem">
+                            <p><span class="title">Combo 2 Kệ Rổ Nhựa Đựng Tài Liệu Magazine</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold; text-decoration: line-through;">52.500 đ</span> <br>
+                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">37.500 đ</span>
+                        </p>
+                        </a>
+                        <button class="btn btn-warning">Mua</button>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <h1 style="margin-left: 14.5px;" id="pen">Bút viết</h1>
+                    <div id="myCarousel-1" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators"  >
+                          <li data-target="#myCarousel-1" data-slide-to="0" class="active">1</li>
+                          <li data-target="#myCarousel-1" data-slide-to="1">2</li>
+                        </ol>
+                      <div class="carousel-inner">
+                        <div class="item active"> 
+                          <div id="product-p1">
+                            <div class="p-1" >
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/5.jpg" alt="but5" class="imgitem">
+                                    <p>
+                                        <span class="title">BÚT DẠ QUANG NHỎ Halo.zee</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">8.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/1.jpg" alt="but1" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút máy Hồng Hà nét hoa</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price"> 3.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/2.jpg" alt="but2" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút chì siêu mềm Colleen 2b-6b</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">5.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/3.jpg" alt="but3" class="imgitem">
+                                    <p>
+                                        <span class="title">BÚT BI THIÊN LONG TL27–XANH</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">3.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/4.jpg" alt="but4" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút lông, bút dạ bảng Thiên Long WB-03</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">7.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="item"> 
+                          <div id="product-p1">
+                            <div class="p-1" >
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/26.jpg" alt="but5" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút chì kim bấm Pentel 0.5mm</span><br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">4.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/27.jpg" alt="but1" class="imgitem">
+                                    <p>
+                                        <span class="title">Combo 10 cây bút chì bấm ngòi 2.0mm</span><br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">50.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/28.jpg" alt="but2" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút bi trang trí nước kim tuyến có đèn</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">9.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/29.jpg" alt="but3"class="imgitem">
+                                    <p>
+                                        <span class="title">Bút bi bấm nhiều màu (nhiều mẫu)</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">23.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/4.jpg" alt="but4" class="imgitem">
+                                    <p>
+                                        <span class="title">Bút máy Picasso</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">9.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="product-2">
+                    <h1 style="margin-left: 14.5px; margin-top: 35px;" id="stationerys">Văn phòng phẩm</h1>
+                    <div id="myCarousel-2" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators"  >
+                          <li data-target="#myCarousel-2" data-slide-to="0" class="active">1</li>
+                          <li data-target="#myCarousel-2" data-slide-to="1">2</li>
+                        </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                        <div class="product-p2">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/6.jpg" alt="vp6" class="imgitem">
+                                    <p>
+                                        <span class="title">Kéo Văn Phòng Deli 210mm 6010</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">15.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/7.jpg" alt="vp7" class="imgitem">
+                                    <p>
+                                        <span class="title">Dập ghim số 10 Deli 0238</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">10.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/8.jpg" alt="vp8" class="imgitem">
+                                    <p>
+                                        <span class="title">Băng Keo Văn Phòng</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">7.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/9.jpg" alt="vp9" class="imgitem">
+                                    <p>
+                                        <span class="title">TÚI ĐỰNG TÀI LIỆU NHIỀU NGĂN ĐA NĂNG</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">20.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/sp1/Capture.PNG" alt="vp10" class="imgitem">
+                                    <p>
+                                        <span class="title">Dao Rọc Giấy Văn Phòng Phẩm GD012 - Dao Rọc Giấy Bằng Kim Loại Không Gỉ</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">7.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="item ">
+                            <div class="product-p2">
+                                <div class="p-1">
+                                    <a href="">
+                                        <img src="../Web-SanPham/Ảnh Web/31.jpg" alt="vp6" class="imgitem">
+                                        <p>
+                                            <span class="title">Lọ mực Picasso đen dành cho bút máy</span> <br>
+                                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">22.000 đ</span>
+                                        </p>
+                                    </a>
+                                    <button class="btn btn-warning">Mua</button>
+                                </div>
+                                <div class="p-1">
+                                    <a href="">
+                                        <img src="../Web-SanPham/Ảnh Web/32.jpg" alt="vp7" class="imgitem">
+                                        <p>
+                                            <span class="title">Đinh ghim bảng nhung, bảng bần x25 cái</span> <br>
+                                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">20.000 đ</span>
+                                        </p>
+                                    </a>
+                                    <button class="btn btn-warning">Mua</button>
+                                </div>
+                                <div class="p-1">
+                                    <a href="">
+                                        <img src="../Web-SanPham/Ảnh Web/33.jpg" alt="vp8" class="imgitem">
+                                        <p>
+                                            <span class="title">Kệ sách 4 ngăn - kệ rổ đựng hồ sơ văn phòng nhựa xéo 4 ngăn</span> <br>
+                                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">43.000 đ</span>
+                                        </p>
+                                    </a>
+                                    <button class="btn btn-warning">Mua</button>
+                                </div>
+                                <div class="p-1">
+                                    <a href="">
+                                        <img src="../Web-SanPham/Ảnh Web/34.jpg" alt="vp9" class="imgitem">
+                                        <p>
+                                            <span class="title">Dao rọc giấy Deli 2043</span> <br>
+                                            <span style="color: red; font-size: 20px; font-weight: bold;" class="price">33.000 đ</span>
+                                        </p>
+                                    </a>
+                                    <button class="btn btn-warning">Mua</button>
+                                </div>
+                                <div class="p-1">
+                                    <a href="">
+                                        <img src="../Web-SanPham/Ảnh Web/35.jpg" alt="vp10" class="imgitem">
+                                        <p>
+                                            <span class="title">Giấy Stick Note , giấy NOTE, giấy Ghi Chú siêu tiện dụng</span> <br>
+                                            <span style="color: red; font-size: 20px; font-weight: bold;"  class="price">10.000 đ</span>
+                                        </p>
+                                    </a>
+                                    <button class="btn btn-warning">Mua</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-3">
+                    <h1 style="margin-left: 14.5px;  margin-top: 35px;" id="learning">Dụng cụ học tập</h1>
+                    <div id="myCarousel-3" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators"  >
+                          <li data-target="#myCarousel-3" data-slide-to="0" class="active">1</li>
+                          <li data-target="#myCarousel-3" data-slide-to="1">2</li>
+                        </ol>
+                      <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="product-p3">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/11.png" alt="learn1" class="imgitem">
+                                    <p>
+                                        <span>
+                                        <div class="title">CASIO FX-580VN X</div> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;"  class="price">500.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/12.jpg" alt="learn2"class="imgitem">
+                                    <p>
+                                        <span class="title">Bút Xóa Thiên Long CP-02</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">5.300 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/13.jpg" alt="learn3" class="imgitem">
+                                    <p>
+                                        <span class="title">30268 Compa kỹ thuật chân kim bằng thép, tiêu chuẩn DIN 6486</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">12.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/14.jpg" alt="learn4" class="imgitem">
+                                    <p>
+                                        <span class="title">Thước Nhựa Cứng 30cm</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">2.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/15.jpg" alt="learn5" class="imgitem">
+                                    <p>
+                                        <span class="title">Phấn Trắng Không Bụi Hộp 100 Viên</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">6.200 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-p3">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/36.jpg" alt="learn1" class="imgitem">
+                                    <p>
+                                        <span class="title">Hồ dán nước học sinh 30ml STACOM - LG130S ( Set 5 chai )</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">20.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/37.jpg" alt="learn2" class="imgitem">
+                                    <p>
+                                        <span class="title">GÔM H-ABC</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">3.300 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/38.jpg" alt="learn3"class="imgitem">
+                                    <p>
+                                        <span class="title">Nhãn Vở Campus Food NT-FOD18 (18 Nhãn/Tập)</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">10.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/39.jpg" alt="learn4" class="imgitem">
+                                    <p>
+                                        <span class="title">Bộ 5 Quyển Vở Học Sinh Kẻ Ngang Khổ Lớn - Loại 200 Trang</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">60.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/40.jpg" alt="learn5" class="imgitem">
+                                    <p>
+                                        <span class="title">BẢNG CON HỌC SINH</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">8.200 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-4">
+                    <h1 style="margin-left: 14.5px;  margin-top: 35px;" id="paint">Vẽ, học vẽ, tô màu</h1>
+                    <div id="myCarousel-4" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators"  >
+                          <li data-target="#myCarousel-4" data-slide-to="0" class="active">1</li>
+                          <li data-target="#myCarousel-4" data-slide-to="1">2</li>
+                        </ol>
+                      <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="product-p4">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/16.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Hộp bút sáp 64 màu cho bé</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">25.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/17.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Bộ 12 Cọ Vẽ Tranh Sơn Dầu, Màu Nước, Hóa Trang Chuyên Nghiệp</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">32.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/18.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        B<span class="title">út Lông Màu FINECOLOUR Dùng Vẽ Tranh (60 Màu)</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">55.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/19.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Màu Acrylic Cao Cấp Pebeo Pháp Tuýp 100ml</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">100.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/20.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Xấp 12 Tờ Giấy Roki A4 Dày 180gsm</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">12.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-p4">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/41.jpg" alt="Vẽ, học vẽ, to màu"class="imgitem">
+                                    <p>
+                                        <span class="title">Màu Bột vẽ tranh - bán theo lạng</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">25.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/42.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Sơn xịt ATM Spray Đủ Màu Giá Sỉ</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">29.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/43.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Sáp Dầu Pentel 50 Màu - PHN-50</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">110.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/44.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">GIẤY THAN CARBON SAO VẼ RẬP/VIẾT HOÁ ĐƠN</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">10.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/45.jpg" alt="Vẽ, học vẽ, to màu" class="imgitem">
+                                    <p>
+                                        <span class="title">Màu Nước SOLID WATER 12/18/24/36 Màu Cao CCấp</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">74.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-5">
+                    <h1 style="margin-left: 14.5px;  margin-top: 35px;" id="toy">Đồ chơi</h1>
+                    <div id="myCarousel-5" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators"  >
+                          <li data-target="#myCarousel-5" data-slide-to="0" class="active">1</li>
+                          <li data-target="#myCarousel-5" data-slide-to="1">2</li>
+                        </ol>
+                      <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="product-p5">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/21.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Rubik - đồ chơi trí tuệ</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">45.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/22.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Con Quay Fidget Spinner Ánh Sáng Dạ Quang YUC</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">32.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/23.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Bộ 10 Đồ Chơi Squishy Mochi Hình Thú Dễ Thương</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">22.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/24.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Chất nhờn Slime hàng siêu hot năm nay</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">33.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/25.jpg" alt="Đò chơi"class="imgitem">
+                                    <p>
+                                        B<span class="title">ạch tuộc nhồi bông cảm xúc độc đáo vui nhộn</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">66.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-p5">
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/46.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Trò Chơi Khám Răng Cá Sấu</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">40.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/47.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Trò chơi đâm hải tặc cỡ lớn</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">132.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/48.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">COMBO 5 Thú Nhún Emoji - Emoji Lò Xo</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">12.500 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/49.jpg" alt="Đò chơi" class="imgitem">
+                                    <p>
+                                        <span class="title">Bộ 6 Xúc Xắc Xí Ngầu Chất Lượng Cao</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">16.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                            <div class="p-1">
+                                <a href="">
+                                    <img src="../Web-SanPham/Ảnh Web/50.jpg" alt="Đò chơi"class="imgitem">
+                                    <p>
+                                        <span class="title">Pop It Fidget Toy Bóng Đẩy Giảm Căng Thẳng Màu Cầu Vồng</span> <br>
+                                        <span style="color: red; font-size: 20px; font-weight: bold;" class="price">35.000 đ</span>
+                                    </p>
+                                </a>
+                                <button class="btn btn-warning">Mua</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+          </div>
+    
+    <div id="footer">
+        <div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <p><p class="font-weight-bold ">NTTvanphongpham.com - Website thương mại điện tử thuộc NTT</p>
+
+                        <br> Công ty Cổ Phần Tập Đoàn NTT
+                        
+                        <br> GPĐKKD số 0301464830 do Sở KHĐT TP. Hồ Chí Minh cấp ngày 04/03/2005.
+                        
+                        <br> Địa chỉ: Lô 6-8-10-12, Đường số X, Q.Gò Vấp, TP. Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="col-4">
+                    <p><p class="font-weight-bold">HỖ TRỢ KHÁCH HÀNG</p>
+                        <p class="text-danger">
+                            Hotline: 1900 800 811 <br>
+                            
+                            NTTvanphongpham@gmail.com.vn
+                        </p>
+                        
+                        <a href="../support/html/chinhsachuudai.html"><br>- Chính sách ưu đãi</a>
+                        <a href="../support/html/huongdanmuahang.html"><br>- Hướng dẫn mua hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-6">2021 © NTTvanphongpham.com - Bản quyền thuộc Tập đoàn NTT</div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

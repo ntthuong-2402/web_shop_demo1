@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng ký</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../..//fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="/formdk-dn/css/dk.css">
+    <script>
+        function kiemtraHo(){
+            let ho = document.getElementById("txtHo").value;
+            let regex = /^[a-zA-Z]+$/;
+
+            if(ho.trim() === ''){
+                document.getElementById('tbHo').innerHTML="Họ bắt buộc nhập"
+                return false;
+            }
+            if(ho.trim() !== '' && !regex.test(ho)){
+                document.getElementById("tbHo").innerHTML = "Họ không được có ký tự số"
+                return false;
+            }
+
+            document.getElementById("tbHo").innerHTML = "*";
+            return true;
+        }
+
+        function kiemtraTen(){
+            let ten = document.getElementById("txtTen").value;
+            let regex = /^[a-zA-Z]+$/;
+
+            if(ten.trim() === ''){
+                document.getElementById('tbTen').innerHTML="Tên bắt buộc nhập"
+                return false;
+            }
+            if(ten.trim() !== '' && !regex.test(ten)){
+                document.getElementById("tbTen").innerHTML = "Tên không được có ký tự số"
+                return false;
+            }
+
+            document.getElementById("tbTen").innerHTML = "*";
+            return true;
+        }
+        
+
+        function kiemtraDienthoai(){
+            let dienthoai = document.getElementById("txtStd").value;
+            let regex = /^[0-9]{9,10}$/;
+
+            if(dienthoai.trim() !== '' && !regex.test(dienthoai)){
+                document.getElementById("tbStd").innerHTML = "Số điện thoại (9-10 số)"
+                return false;
+            }
+
+            document.getElementById("tbStd").innerHTML = "*";
+            return true;
+        }
+
+        function kiemtraEmail(){
+            let email = document.getElementById("txtEmail").value;
+            let regex =  /^\w+@\w+\.com$/;
+
+            if(email.trim() === ''){
+                document.getElementById('tbEmail').innerHTML="Email bắt buộc nhập"
+                return false;
+            }
+            if(email.trim() !== '' && !regex.test(email)){
+                document.getElementById("tbEmail").innerHTML = "Email ở dạng ABC@ABC.com"
+                return false;
+            }
+
+            document.getElementById("tbEmail").innerHTML = "*";
+            return true;
+        }
+        
+        function kiemtraMatKhau(){
+            let matkhau = document.getElementById("txtMk").value;
+            let regex = /^[a-zA-Z0-9]{6,}$/;
+            if(matkhau.trim() === ''){
+                document.getElementById('tbMk').innerHTML="Mật khẩu bắt buộc nhập"
+                return false;
+            }
+            if(matkhau.trim() !== '' && !regex.test(matkhau)){
+                document.getElementById("tbMk").innerHTML = "Mật khẩu phải từ 6 số trở lên và không chứa ký tự đặt biệt"
+                return false;
+            }
+
+            document.getElementById("tbMk").innerHTML = "*";
+            return true;
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    
+        <div id="header">
+            <a href="../../wepshop/trangchu.html">
+                <p >Văn phòng phẩm</p>
+            </a>
+            <a href="../../wepshop/trangchu.html"><img src="../../img/logoshop.png" alt="picture"></a>
+            <div class="search-box">
+                <input type="text" name="search" id="search" placeholder="Tìm kiếm sản phẩm..." >
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+                <p class="spphone">Hỗ trợ khách hàng <br>
+                    <a href="">1900 800 811</a>
+                </p>
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+                <p class="login"><a href="">Tài khoản</a> <br>
+                    <a href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                </p>
+            <div class="shopping-cart">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <a href="../../wepshop/trangchu.html" class="nav-link" style="font-size: 20px;">Về trang chủ</a>
+        <div >
+            <div class="row bg-light p-5">
+                <div class="col-2"></div>
+                <div class="col-8  ">
+                    <div class=" p-1 border bg-white">
+                        <h5>ĐĂNG KÝ TÀI KHOẢN</h5>
+                        <p>Bạn đã có tài khoản? Đăng nhập <a class="text-dark" href="../html/DN.html">tại đây</a></p>
+                    </div>
+                    <form class=" border p-2 bg-white" action="" >
+                        <h6 class="text-center text-uppercase">thông tin cá nhân</h6>             
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for="" class="font-weight-bold">Họ</label>
+                                <span id="tbHo" class="text-danger font-italic">*</span>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="txtHo" id="txtHo" placeholder="Họ" onblur="return kiemtraHo();">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for="" class="font-weight-bold">Tên</label>
+                                <span id="tbTen" class="text-danger font-italic">*</span>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="txtTen" id="txtTen" placeholder="Tên" onblur="return kiemtraTen();">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for="" class="font-weight-bold">Số Điện Thoại</label>
+                                <span id="tbStd" class="text-danger font-italic">*</span>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="txtStd" id="txtStd" placeholder="Số Điện thoại" onblur="return kiemtraDienthoai();">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for="" class="font-weight-bold">Email</label>
+                                <span id="tbEmail" class="text-danger font-italic">*</span>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Email" onblur="return kiemtraEmail();">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for="" class="font-weight-bold">Mật Khẩu</label>
+                                <span id="tbMk" class="text-danger font-italic">*</span>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="password" class="form-control" name="txtMk" id="txtMk" placeholder="Mật Khẩu" onblur="return kiemtraMatKhau();">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 text-right"></div>
+                            <div class="col-8">
+                                <label for=""></label>
+                                
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <input type="button" class="btn btn-block btn-warning" value="ĐĂNG KÍ">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                       
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-6">
+                        <p><p class="font-weight-bold ">NTTvanphongpham.com - Website thương mại điện tử thuộc NTT</p>
+    
+                            <br> Công ty Cổ Phần Tập Đoàn NTT
+                            
+                            <br> GPĐKKD số 0301464830 do Sở KHĐT TP. Hồ Chí Minh cấp ngày 04/03/2005.
+                            
+                            <br> Địa chỉ: Lô 6-8-10-12, Đường số X, Q.Gò Vấp, TP. Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                    <div class="col-4">
+                        <p><p class="font-weight-bold">HỖ TRỢ KHÁCH HÀNG</p>
+                            <p class="text-danger">
+                                Hotline: 1900 800 811 <br>
+                                
+                                NTTvanphongpham@gmail.com.vn
+                            </p>
+                            
+                            <a href="../../support/html/chinhsachuudai.html"><br>- Chính sách ưu đãi</a>
+                            <a href="../../support/html/huongdanmuahang.html"><br>- Hướng dẫn mua hàng</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-6">2021 © NTTvanphongpham.com - Bản quyền thuộc Tập đoàn NTT</div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
